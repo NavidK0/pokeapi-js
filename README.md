@@ -1,6 +1,11 @@
+[![npm version](https://img.shields.io/npm/v/@navidk0/pokeapi-js)](https://www.npmjs.com/package/@navidk0/pokeapi-js)
+[![CI](https://github.com/navidk0/pokeapi-js/actions/workflows/test-pokeapi.yml/badge.svg)](https://github.com/navidk0/pokeapi-js/actions/workflows/ci.yml)
+
 # pokeapi-js
 
-A simple JavaScript/TypeScript client for the [PokeAPI](https://pokeapi.co/).
+A simple JavaScript/TypeScript client for the [PokeAPI](https://pokeapi.co/) v2.
+
+[NPM](https://www.npmjs.com/package/@navidk0/pokeapi-js) | [GitHub](https://github.com/navidk0/pokeapi-js) | [PokeAPI Documentation](https://pokeapi.co/docs/v2)
 
 ## Design Goals
 
@@ -69,7 +74,7 @@ yarn add @navidk0/pokeapi-js
 ## Usage Examples
 
 ```typescript
-import { PokeApiClient } from "pokeapi-js";
+import { PokeApiClient } from "@navidk0/pokeapi-js";
 
 const client = new PokeApiClient();
 

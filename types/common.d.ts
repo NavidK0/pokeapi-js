@@ -1,5 +1,5 @@
 /*
- * This file provides common types used across the SDK.
+ * This file provides common types used across the PokeAPI.
  */
 
 /**
