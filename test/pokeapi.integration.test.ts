@@ -85,10 +85,10 @@ describe("PokeAPIClient error handling", () => {
 
   it("should throw an error for network issues", async () => {
     await expect(client.getPokemon("pikachu")).rejects.toThrow();
-  });
+  }, 20000);
 
   it("should throw an error for invalid base URL", async () => {
     const invalidClient = new PokeAPIClient("https://invalid-url.com");
     await expect(invalidClient.getGeneration(1)).rejects.toThrow();
-  });
+  }, 20000);
 });
