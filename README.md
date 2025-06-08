@@ -17,7 +17,7 @@ A simple JavaScript/TypeScript client for the [PokeAPI](https://pokeapi.co/).
   However, the library is designed to work in browsers as well.
 - No additional resource hydration for NamedAPIResource objects. The library returns raw data as provided by the
   PokeAPI.
-  - This could be added in the future. But it adds complexity and is not strictly necessary for most use cases.
+    - This could be added in the future. But it adds complexity and is not strictly necessary for most use cases.
 
 ## Features
 
@@ -34,6 +34,8 @@ This library should support any JS runtime that supports the Fetch API.
 - Bun
 - React Native (with polyfills for Fetch)
 - and more probably
+
+# Usage
 
 ## Installation (for end users)
 
@@ -64,7 +66,7 @@ yarn add @navidk0/pokeapi-js
 
 </details>
 
-## Usage
+## Usage Examples
 
 ```typescript
 import { PokeApiClient } from "pokeapi-js";
