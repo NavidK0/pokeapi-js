@@ -1,7 +1,7 @@
 {
   "name": "@navidk0/pokeapi-js",
   "author": "NavidK0",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A JavaScript client for the PokeAPI",
   "main": "./lib/index.js",
   "types": "./types/types.d.ts",
