@@ -1,0 +1,43 @@
+{
+  "name": "@navidk0/pokeapi-js",
+  "author": "NavidK0",
+  "version": "1.0.0",
+  "description": "A JavaScript client for the PokeAPI",
+  "main": "./lib/index.js",
+  "types": "./types/types.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.js",
+      "types": "./types/types.d.ts"
+    },
+    "./types/*": {
+      "types": "./types/*.ts"
+    },
+    "./lib/*": {
+      "require": "./lib/*.js",
+      "import": "./lib/*.js",
+      "types": "./lib/*.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "pnpm build && jest",
+    "test:verbose": "cross-env POKEAPI_DEBUG_LOGS=true && pnpm test --silent=false",
+    "build": "npm run format && rimraf lib && tsc",
+    "format": "prettier --write ."
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.14.8",
+    "cross-env": "^7.0.3",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.4.0"
+  }
+}

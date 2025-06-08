@@ -1,0 +1,15 @@
+node_modules/
+dist/
+lib/
+coverage/
+
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+.vscode/
+.idea/
+
+.DS_Store
+
+*.tsbuildinfo
