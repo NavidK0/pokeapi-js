@@ -7,7 +7,9 @@ A simple JavaScript/TypeScript client for the [PokeAPI](https://pokeapi.co/) v2.
 
 [NPM](https://www.npmjs.com/package/@navidk0/pokeapi-js) | [GitHub](https://github.com/navidk0/pokeapi-js) | [PokeAPI Documentation](https://pokeapi.co/docs/v2)
 
-## Design Goals
+## Design
+
+### Goals
 
 - **Simplicity**: Easy to use and understand. Similar to the official PokeAPI REST API.
 - **Type Safety**: Fully typed with TypeScript for a better developer experience.
@@ -15,7 +17,7 @@ A simple JavaScript/TypeScript client for the [PokeAPI](https://pokeapi.co/) v2.
 - **Compatibility**: Works in both Node.js and browser environments.
 - **No External Dependencies**: Pure JavaScript/TypeScript without any external libraries.
 
-## Caveats
+### Caveats
 
 - Caching and rate limiting are not implemented. You should handle these in your application if needed.
 - Tests do not cover browser environments. This is to simplify the testing setup and focus on core functionality.
@@ -29,7 +31,7 @@ A simple JavaScript/TypeScript client for the [PokeAPI](https://pokeapi.co/) v2.
 - GET Pokemon (Name, ID) - Supports fetching single or multiple Pokémon by name or ID.
 - GET Generations (Name, ID) - Fetches all generations of Pokémon.
 
-### Compatibility
+## Compatibility
 
 This library should support any JS runtime that supports the Fetch API.
 
@@ -144,6 +146,8 @@ Run tests:
 ```sh
 pnpm test
 ```
+
+# Addendum
 
 ## License
 
